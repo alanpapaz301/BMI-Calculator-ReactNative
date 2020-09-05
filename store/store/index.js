@@ -3,7 +3,7 @@ import { createStore } from 'redux';
 const INITIAL_STATE = 0;
 
 
-function num(state = 0, action) {
+function bmi(state = 0, action) {
   
   switch (action.type) {
     case 'CALCULATE':
@@ -13,6 +13,6 @@ function num(state = 0, action) {
   }
 }
 
-const store = createStore(num);
+const store = createStore(bmi);
 
 export default store;
